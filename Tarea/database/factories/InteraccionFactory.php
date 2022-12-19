@@ -19,8 +19,8 @@ class InteraccionFactory extends Factory
     {
         $ran = [A, R];
         return [
-            'perInteresado_id' => Perro::factory(),
-            'perCandidato_id' => Perro::factory(),
+            'inteper_id' => Perro::factory(),
+            'intepercand_id' => Perro::factory(),
             'inte_preferencia' => Arr::ramdom($ran),
         ];
     }

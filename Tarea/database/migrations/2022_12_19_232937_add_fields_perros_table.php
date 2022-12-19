@@ -13,9 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('interaccions', function (Blueprint $table){
-            $table->unsignedBigInteger('inteper_id')->nullable();
-            $table->foreign('inteper_id')->references('id')->on('perros');
+        Schema::table('perros', function (Blueprint $table){
+            $table->string('per_urlfoto', 255)->nullable();
         });
     }
 
@@ -26,8 +25,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('interaccions', function (Blueprint $table){
-            $table->dropForeign('inteper_id');
+        Schema::table('perros', function (Blueprint $table){
+            $table->dropColumn('per_urlfoto');
         });
     }
 };

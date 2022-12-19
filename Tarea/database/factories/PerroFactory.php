@@ -18,6 +18,7 @@ class PerroFactory extends Factory
         return [
             'per_nombre' => $this->faker->name,
             'per_descripcion' => $this->faker->sentence,
+            'per_urlfoto' => 'https://images.hola.com/imagenes/mascotas/20221020219416/razas-perros-toy/1-154-385/razas-de-perro-toy-t.jpg'
         ];
     }
 }
