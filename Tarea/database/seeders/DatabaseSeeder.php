@@ -16,9 +16,11 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        $perro = Perro::factory()->create();
+
+        $posts = Interaccion::factory()
+            ->count(3)
+            ->for($perro)
+            ->create();
     }
 }
