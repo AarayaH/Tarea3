@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Perro;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -14,13 +15,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        Perro::factory(10)->create();
 
+        /*
         $perro = Perro::factory()->create();
 
         $posts = Interaccion::factory()
             ->count(3)
             ->for($perro)
             ->create();
+        */
     }
 }

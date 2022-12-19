@@ -3,17 +3,16 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use App\Models\Perro;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Perro>
  */
 class PerroFactory extends Factory
 {
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
+    
+    protected $model = Perro::class;
+
     public function definition()
     {
         return [

@@ -9,7 +9,7 @@ class Interaccion extends Model
 {
     use HasFactory;
 
-    protected $table = "interaccion";
+    protected $table = "interaccions";
     protected $primarykey = "id";
     public $timetamps = true;
 
@@ -19,6 +19,6 @@ class Interaccion extends Model
 
     public function perro()
     {
-        return $this->belongsTO(Perro::class,"perro_id");
+        return $this->belongsTo(Perro::class,"perro_id");
     }
 }

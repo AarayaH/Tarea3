@@ -4,17 +4,17 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Arr;
+use App\Models\Interaccdion;
+use App\Models\Perro;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Interaccion>
  */
 class InteraccionFactory extends Factory
 {
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
+    
+    protected $model = Interaccion::class;
+
     public function definition()
     {
         $ran = [A, R];

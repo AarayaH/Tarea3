@@ -9,7 +9,7 @@ class Perro extends Model
 {
     use HasFactory;
 
-    protected $table = 'perro';
+    protected $table = 'perros';
     protected $primarykey = 'id';
     public $timestamps = true;
 
@@ -24,3 +24,5 @@ class Perro extends Model
         return $this->hasMany(Interaccion::class);
     }
 }
+
+
