@@ -24,7 +24,17 @@ class InteraccionRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            "preferencia" => "required|string|max:50",
         ];
     }
+
+    public function messages()
+    {
+        return[
+            'required' =>'El campo :attribute es requerido',
+            'string' => 'El campo :attribute debe ser de tipo string',
+            'max' => 'El campo :attribute supera el maximo permitido',
+        ];
+    }
+
 }
